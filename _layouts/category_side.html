@@ -1,0 +1,36 @@
+{% include header.html %}
+
+<hr style="margin-top: 35px;">
+
+<!-- Post list -->
+{% assign posts = site.posts | sort: 'priority' %}
+{% for post in posts %}
+  {% if post.category == page.category %}
+    <div class="row post-row">
+      <div class="col-md-12">
+        <div class="row">
+          {% if post.feature_image %}
+          <div class="col-md-7">
+            <img class="img-responsive feature-img" src="{{ post.feature_image }}"></img>
+          </div>
+          {% endif %}
+          <div class="col-md-5">
+            {% if post.detail %}
+              <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="intro">{{ post.title | escape }}</h3></a>
+              <p class="post-date">{{ post.date | date: "%Y" }}</p>
+              <p class="text-left">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+              <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+            {% else %}
+              <h3 class="intro">{{ post.title | escape }}</h3>
+              <p class="post-date">{{ post.date | date: "%Y" }}</p>
+              <p class="text-left">{{ post.content | remove: '<p>' | remove: '</p>' }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  {% endif %}
+{% endfor %}
+
+{% include footer.html %}
