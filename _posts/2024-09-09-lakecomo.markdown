@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Corfu Town"
+category: photography
+feature_image: /img/corfutown.jpg
+detail: false 
+priority: 12
+---

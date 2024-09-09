@@ -121,8 +121,7 @@ a.nav {
     width: 32%;
     max-width: 200px;
     margin: 0;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+
 }
 
     .nav-img:hover {
