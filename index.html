@@ -17,35 +17,33 @@ layout: default
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
   }
 
   .nav-img {
     width: 180px;
-    height: 320px;
+    height: 300px;
     object-fit: cover;
+    margin: 0; /* Ensures no space between images */
   }
 
   @media (max-width: 768px) {
     .img-container {
       justify-content: flex-start;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .nav-img {
-      flex-grow: 1;
-      flex-shrink: 1;
       width: 33.33vw;
-      height: 35vw;
+      height: 40vw;
       object-fit: cover;
-    }
-    .img-container a:first-child .nav-img,
-    .img-container a:last-child .nav-img {
-      padding-left: 5vw;
-      padding-right: 5vw;
+      margin: 0;
     }
   }
 </style>
-
-
 
 
 
