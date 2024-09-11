@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Dynamically Priced Bakery Management System"
+date:   2024-09-09
+category: projects
+feature_image: /img/dynamic-pricing.jpg
+feature_image_class: rounded
+detail: true 
+priority: -30
+excerpt: This is management system (customers and stock) I built for a fictional bakery as part of my Computer Science A Level in C#. I added dynamic pricing (like Uber's surge pricing), adjusting product costs in real-time, all aimed at reducing waste and improving profitability.
+---
+
+This is management system (customers and stock) I built for a fictional bakery as part of my Computer Science A Level in C#. I added dynamic pricing (like Uber's surge pricing), adjusting product costs in real-time, all aimed at reducing waste and improving profitability.
+
+**Source code:** [https://github.com/pavlips/DynamicallyPricedbakery](https://github.com/pavlips/DynamicallyPricedbakery)
+
+### How It Works
+The system uses recent sales data, weather conditions via the OpenWeatherMap API and ongoing promotional events to dynamically adjust bakery prices. It also gives discounts based on a customer loyalty program which creates custom QR codes (using ZXing.NET) and scans them (using AForge.NET) for easy identification. I use least squares regression to predict when the stock price will fall to zero, and adjust the prices accordingly. So if its projected to become zero early in the day, I increase the price so less customers buy it. Likewise, if its projected to happen late in the day (or not at all), I decrease price so more customers buy. This means a higher profit for businesses, as well as less waste. Aditionally, weather conditions give a multiplier due to customer footfall changing as a result of them. The business owner can then generate different reports to judge the effectiveness of the pricing strategy and loyalty program.
+
+It's really tricky to explain all of its functionality. Below is a simple video I made when submitting the project going through them. The list of test cases is long so it won't be added here, but it shows off the entire application. 
+
+**Testing video:** [https://www.youtube.com/watch?v=Dk9B4qvwK6E](https://www.youtube.com/watch?v=Dk9B4qvwK6E)
+
+### What Next?
+Some ideas of what to explore to improve this project:
+
+ * Use more complex algorithms like an exponential moving average for the rate of sales. Again, I couldn't implement it due to time constraints, but it would work a lot better for identifying trends.
+ * Implement promotions targetted specifically at certain customer loyalty levels, giving them further discounts.
+ * Create a more modern UI through another front end framework (Blazor?).
+ * Develop more complex analysis of pricing strategies to make it easier for the business owner to identify their next action.
