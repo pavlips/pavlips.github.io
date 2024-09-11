@@ -78,13 +78,16 @@ a.nav {
         background-color: #444;
     }
 
-.feature-img {
-    margin: auto;
-    max-width: 500px;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+    .feature-img {
+        margin: auto;
+        max-width: 480px;   
+        max-height: 600px; 
+        width: auto;        
+        height: auto;       
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
 .divider {
    width: 100%; 
