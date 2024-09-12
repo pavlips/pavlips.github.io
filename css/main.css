@@ -80,13 +80,14 @@ a.nav {
 
     .feature-img {
         margin: auto;
-        max-width: 480px;   
-        max-height: 600px; 
+        max-width: 460px;   
+        max-height: 500px; 
         width: auto;        
         height: auto;       
         display: block;
         margin-top: 10px;
         margin-bottom: 20px;
+        image-rendering: auto;
     }
 
 .divider {
