@@ -12,7 +12,7 @@ excerpt: This is management system (customers and stock) I built for a fictional
 
 This is management system (customers and stock) I built for a fictional bakery as part of my Computer Science A Level in C#. I added dynamic pricing (like Uber's surge pricing), adjusting product costs in real-time, all aimed at reducing waste and improving profitability.
 
-**Source code:** [https://github.com/pavlips/DynamicallyPricedbakery](https://github.com/pavlips/DynamicallyPricedbakery)
+**Source code:** [https://github.com/pavlips/DynamicallyPricedBakery](https://github.com/pavlips/DynamicallyPricedBakery)
 
 ### How It Works
 The system uses recent sales data, weather conditions via the OpenWeatherMap API and ongoing promotional events to dynamically adjust bakery prices. It also gives discounts based on a customer loyalty program which creates custom QR codes (using ZXing.NET) and scans them (using AForge.NET) for easy identification. Least squares regression is used to predict when the stock price will fall to zero, and the program adjusts the prices accordingly. So if its projected to become zero early in the day, the program increases the price so less customers buy the product. Likewise, if its projected to happen late in the day (or not at all), the program decreases price so more customers buy the product. This means a higher profit for businesses, as well as less waste. Aditionally, weather conditions give a multiplier due to customer footfall changing as a result of them. The business owner can then generate different reports to judge the effectiveness of the pricing strategy and loyalty program.
