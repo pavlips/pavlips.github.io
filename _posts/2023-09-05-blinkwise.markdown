@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blinkwise: App Use Regulator"
+title:  "Blinkwise: App Usage Regulator"
 date:   2023-09-05
 category: projects
 feature_image: /img/epq.gif
