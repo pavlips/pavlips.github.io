@@ -7,4 +7,4 @@ priority: 30
 
 When researching optimisation techniques for reducing the computational load and memory footprint of ML models, I found many wrong and confusing explanations of the GPTQ algorithm. I hope to explain it better in this blog post. 
 
-Will be written up during university break.
+Will be written up whenever I'm not overloaded with uni work!
